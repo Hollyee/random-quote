@@ -1,0 +1,115 @@
+/*@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*设置基线*/
+    /*vertical-align: baseline;*/
+}
+
+div {
+    /*为什么设置relative*/
+    position: relative;
+    /*值越高在越前面 */
+    z-index: 2
+}
+
+body {
+    background-color: #333;
+    color:#333;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    display: flex;
+    /*水平垂直居中*/
+    justify-content: center;
+    align-items: center;
+    /* 设置高度align-items才生效*/
+    height: 100vh;
+}
+
+.footer{
+    width: 450px;
+    text-align: center;
+    display: block;
+    margin: 15px auto 30px auto;
+    color: #fff;}
+
+.footer a{
+    font-weight: 500;
+    text-decoration: none;
+    color:white;
+}
+/*引文区*/
+#quote-box {
+    border-radius: 3px;
+    position: relative;
+    width: 450px;
+    padding: 40px 50px;
+    /* 此元素会作为块级表格来显示（类似 <table>），表格前后带有换行符。*/
+    display: table;
+    background-color: #fff;
+}
+/*引文文字*/
+.quote-text{
+    text-align:center;
+    width:450px;
+    height:auto;
+    /*这为什么要清浮动*/
+    /*clear:both;*/
+    font-weight:500;
+    font-size:1.75em;
+}
+
+.quote-text i{
+    font-size: 1em;
+    margin-right: 0.4em;
+}
+
+.quote-author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+}
+.buttons {
+    width: 450px;
+    margin: auto;
+/*按钮是行内元素 */
+    display: block;}
+
+.buttons .button {
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    /*用来设置轮廓 */
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top: 30px;
+    opacity: 1;
+    /*指针变成手 */
+    cursor: pointer;}
+    /*指针悬停有变化*/
+.buttons .button:hover{
+    opacity: 0.9;
+}
+/*喜欢与点赞*/
+#like-quote, #weibo-quote{
+    float: left;
+    padding:8px 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5px;
+    height: 30px;
+    width: 40px;
+    color: white;
+}
+
+#new-quote {
+    float: right;
+}

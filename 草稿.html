@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 100px;
+            height:100px;
+            background-color: green;
+            /*border: 1px solid red;*/
+        }
+
+    </style>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/js-color.js"></script>
+</head>
+<body>
+<div id="box">so</div>
+<script>
+// $(function () {
+//     $("#box").on('click',function () {
+//         $(this).animate({backgroundColor:'#FF0000'},1000)
+//     })
+// })
+$(function(){
+    $("#box").animate({
+        backgroundColor:'#ffce37',
+        // opacity:0.5/
+    }, 1000)
+})
+
+</script>
+</body>
+</html>
